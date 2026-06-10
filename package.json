@@ -1,0 +1,35 @@
+{
+  "name": "is_letter_s",
+  "version": "1.0.0",
+  "description": "Tests if argument is the letter S with optional description.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyle138/is_letter_s.git"
+  },
+  "keywords": [
+    "is-letter-s",
+    "s",
+    "letter-s",
+    "is-s",
+    "unicode",
+    "cyrillic",
+    "greek",
+    "braille",
+    "ligatures"
+  ],
+  "author": "kyle138@gmail.com",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kyle138/is_letter_s/issues"
+  },
+  "homepage": "https://github.com/kyle138/is_letter_s#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+
+}
