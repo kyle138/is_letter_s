@@ -2,6 +2,7 @@
   "name": "is_letter_s",
   "version": "1.0.0",
   "description": "Tests if argument is the letter S with optional description.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "node --test test.js"
