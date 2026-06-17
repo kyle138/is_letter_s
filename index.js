@@ -8,8 +8,8 @@
  * (at your option) any later version.
  */
 
-// The definitive, multi-alphabet 'S' registry
-const Buncha_Ss = new Map([
+// Multi-alphabet 'S' registry
+export const Buncha_Ss = new Map([
   //Latin Esses
   ['S', 'Latin Capital Letter S'],
   ['s', 'Latin Small Letter S'],
@@ -67,8 +67,8 @@ const Buncha_Ss = new Map([
   ['ẝ', 'Latin Small Letter Long S with high stroke']
 ]);
 
-// Ligatures and typographic edge cases that cause existential dread
-const Maybe_Ss = new Map([
+// Ligatures and typographic edge cases
+export const Maybe_Ss = new Map([
   ['ß', 'German Sharp S / Eszett (Ligature of long s and short s)'],
   ['ẞ', 'German Capital Sharp S'],
   ['ﬆ', 'Latin Small Ligature S T'],
@@ -92,7 +92,7 @@ const Maybe_Ss = new Map([
  * @param {string} input - The character to test.
  * @param {Object} [options] - Configuration options.
  * @param {boolean} [options.verbose=false] - If true, returns the character description instead of a boolean.
- * @returns {boolean|string} True/False, a description (if verbose), or a shrug for ligatures.
+ * @returns {boolean|string} True/False, a description (if verbose), or a shrug for maybes.
  */
 export default function isLetterS(input, options = {}) {
   const isVerbose = options.verbose === true;
