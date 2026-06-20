@@ -24,25 +24,25 @@ test('is_letter_s - Standard Behavior (Boolean Mode)', () => {
 
 test('is_letter_s - Enterprise Analytics (Verbose Mode)', () => {
   // Check that descriptions are returned properly
-  assert.strictEqual(
+  assert.deepStrictEqual(
     isLetterS('Š', { verbose: true }), 
-    'Latin Capital Letter S with caron'
+    {verdict: true, description: 'Latin Capital Letter S with caron'}
   );
   
-  assert.strictEqual(
+  assert.deepStrictEqual(
     isLetterS('Ѕ', { verbose: true }), 
-    'Cyrillic Capital Letter Dze'
+    {verdict: true, description: 'Cyrillic Capital Letter Dze'}
   );
 
-  assert.strictEqual(
+  assert.deepStrictEqual(
     isLetterS('ȿ', { verbose: true }), 
-    'Latin Small Letter S with swash tail'
+    {verdict: true, description: 'Latin Small Letter S with swash tail'}
   );
 
   // Check fallback for a non-A character in verbose mode
-  assert.strictEqual(
+  assert.deepStrictEqual(
     isLetterS('Q', { verbose: true }), 
-    'Not any kind of S'
+    {verdict: false, description: 'Not any kind of S'}
   );
 });
 
