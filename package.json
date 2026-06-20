@@ -1,6 +1,6 @@
 {
   "name": "is_letter_s",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Tests if argument is the letter S with optional description.",
   "type": "module",
   "main": "index.js",
