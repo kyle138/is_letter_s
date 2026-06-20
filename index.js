@@ -98,12 +98,12 @@ export default function isLetterS(input, options = {}) {
   const isVerbose = options.verbose === true;
 
   if (Buncha_Ss.has(input)) {
-    return isVerbose ? Buncha_Ss.get(input) : true;
+    return isVerbose ? {verdict: true, description: Buncha_Ss.get(input)} : true;
   }
 
   if (Maybe_Ss.has(input)) {
-    return isVerbose ? Maybe_Ss.get(input) : '¯\\_(ツ)_/¯';
+    return isVerbose ? {verdict: '¯\\_(ツ)_/¯', description: Maybe_Ss.get(input)} : '¯\\_(ツ)_/¯';
   }
 
-  return isVerbose ? 'Not any kind of S' : false;
+  return isVerbose ? {verdict: false, description: 'Not any kind of S'} : false;
 }
