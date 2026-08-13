@@ -35,17 +35,8 @@ export const Buncha_Ss = new Map([
   ['ṩ', 'Latin Small Letter S with dot below and dot above'],
   
   // Cyrillic variations
-  ['С', 'Cyrillic Capital Letter Es'],
-  ['с', 'Cyrillic Small Letter Es'],
-  ['Ҫ', 'Cyrillic Capital Letter Es with descender'],
-  ['ҫ', 'Cyrillic Small Letter Es with descender'],
   ['Ѕ', 'Cyrillic Capital Letter Dze'],
   ['ѕ', 'Cyrillic Small Letter Dze'],
-  
-  // Greek Sigmas (Standard and Terminal)
-  ['Σ', 'Greek Capital Letter Sigma'],
-  ['σ', 'Greek Small Letter Sigma'],
-  ['ς', 'Greek Small Letter Terminal Sigma'],
 
   // Romanian variations
   ['Ș', 'Latin Capital Letter S with comma below'],
@@ -58,13 +49,8 @@ export const Buncha_Ss = new Map([
   ['ȿ', 'Latin Small Letter S with swash tail'],
   ['ʂ', 'Latin Small Letter S with Hook '],
   ['ˢ', 'Modifier Letter Small S'],
-  ['ₛ', 'Latin Subscript Small Letter S'],
+  ['ₛ', 'Latin Subscript Small Letter S']
 
-  // Historical Chaos: The Long S (Used in 18th-century printing, looks like an f)
-  ['ſ', 'Latin Small Letter Long S'],
-  ['ẛ', 'Latin Small Letter Long S with dot above'],
-  ['ẜ', 'Latin Small Letter Long S with diagonal stroke'],
-  ['ẝ', 'Latin Small Letter Long S with high stroke']
 ]);
 
 // Ligatures and typographic edge cases
@@ -84,7 +70,24 @@ export const Maybe_Ss = new Map([
   ['ʧ', 'Latin Small Letter Tesh Digraph'],
   ['ʪ', 'Latin Small Letter LS Digraph'],
   ['Ⓢ', 'Circled Letter Capital Letter S'],
-  ['ⓢ', 'Circled Letter Small Letter S']
+  ['ⓢ', 'Circled Letter Small Letter S'],
+
+  // Cyrillic variations
+  ['С', 'Cyrillic Capital Letter Es'],
+  ['с', 'Cyrillic Small Letter Es'],
+  ['Ҫ', 'Cyrillic Capital Letter Es with descender'],
+  ['ҫ', 'Cyrillic Small Letter Es with descender'],
+
+  // Historical Chaos: The Long S (Used in 18th-century printing, looks like an f)
+  ['ſ', 'Latin Small Letter Long S'],
+  ['ẛ', 'Latin Small Letter Long S with dot above'],
+  ['ẜ', 'Latin Small Letter Long S with diagonal stroke'],
+  ['ẝ', 'Latin Small Letter Long S with high stroke'],
+
+  // Greek Sigmas (Standard and Terminal)
+  ['Σ', 'Greek Capital Letter Sigma'],
+  ['σ', 'Greek Small Letter Sigma'],
+  ['ς', 'Greek Small Letter Terminal Sigma']
 ]);
 
 /**
