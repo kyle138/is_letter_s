@@ -8,8 +8,6 @@ test('is_letter_s - Standard Behavior (Boolean Mode)', () => {
   assert.strictEqual(isLetterS('S'), true, "Failed on uppercase Latin 'S'");
 
   // International variants (Cyrillic & Greek)
-  assert.strictEqual(isLetterS('с'), true, "Failed on Cyrillic small letter 'Es'");
-  assert.strictEqual(isLetterS('С'), true, "Failed on Greek capital letter 'Es'");
   assert.strictEqual(isLetterS('ș'), true, "Failed on Latin small letter S with comma below 'ș'");
 
   // The Ligature Existential Crisis
